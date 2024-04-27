@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3477e9e4bb.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="./index.html">
+                <i class="fas fa-book"></i>
+                <span>Libros</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"> <a class="linkNav" href="./pages/audiolibros.html"> Audio Libros</a> </li>
+                <li class="listaItem"> <a class="linkNav" href="./pages/registrarse.html"> Registrarse</a> </li>
+                <li class="listaItem"> <a class="linkNav" href="./pages/contactos.html"> Comentarios</a></li>
+                <li class="listaItem"> <a class="linkNav iniciarSesion" href="./pages/iniciosesion.html"> Iniciar
+                        Sesion</a> </li>
+            </ul>
+        </nav>
+
+        <!-- <nav class="navegacion navbar navbar-expand-lg bg-body-tertiary"> -->
+
+    </header>
+
+    <main class="main" id="main">
+        <section class="sectionPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="tituloPrincipal">Libros y series ilimitadas <br> en un solo lugar... </h1>
+            <h2 class="subtituloPrincipal"> Disfruta donde quieras. <br> Cancela en cualquier momento </h2>
+            <!-- <a class="botonRegistrarse" href="./pages/registrarse.html">Registrarse</a>  -->
+            <a name="" id="" class="btn btn-danger btn-lg " href="./pages/registrarse.html"
+                role="button">Registrarse</a>
+
+
+        </section>
+
+        <section class="buscadorPrincipal" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50"
+            data-aos-duration="1000">
+            <h2 class="tituloSection">Que estas buscando?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar" required="">
+                <input class="botonBuscador" type="submit" value="Buscar" id="btnBuscar" name="btnBuscar">
+               
+            </form>
+            <hr>
+
+        </section>
+        <section class="peliculasTendencia" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50"
+            data-aos-duration="1000">
+            <h3 class="tituloSection"> Las tendencias de hoy </h3>
+            <div class="peliculas">
+                <a href="./pages/detalle1.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img_libros/1670196213_17.png"
+                            alt="Una Enfermera para el Presidente">
+                        <div class="tituloPelicula">
+                            <h4>Una Enfermera para el Presidente</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/detalle2.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img_libros/1696355641_21.jpg" alt="Un Papa para Santi">
+                        <div class="tituloPelicula">
+                            <h4>Un Papa para Santi</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/detalle3.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img_libros/1608180782_43.png"
+                            alt="Aprendiendo a Olvidar">
+                        <div class="tituloPelicula">
+                            <h4>Aprendiendo a Olvidar</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/detalle4.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img_libros/1705066910_45.jpg" alt="A Primera Vista">
+                        <div class="tituloPelicula">
+                            <h4>A Primera Vista</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img/peli_5.jpg" alt="Aquaman">
+                        <div class="tituloPelicula">
+                            <h4>Aquaman and the lost kingdom</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br>
+
+
+            <button type="button" class="btn btn-light btn-lg">Anterior</button>
+            <button type="button" class="btn btn-light btn-lg">Siguiente</button>
+
+            <!-- <button class="boton anterior">Anterior</button>
+            <button class="boton siguiente">Siguiente</button> -->
+        </section>
+
+        <section class="peliculasAclamadas" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 class="tituloSection">Los mas aclamados</h3>
+            <div class="aclamadas">
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_1.jpg" alt="shaw shank">
+                    <div class="tituloPelicula">
+                        <h4>Shaw Shank</h4>
+                    </div>
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_2.jpg" alt="shaw shank">
+                    <div class="tituloPelicula">
+                        <h4>The Godfather</h4>
+                    </div>
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_3.jpg" alt="shaw shank">
+                    <div class="tituloPelicula">
+                        <h4>The Godfather Part II</h4>
+                    </div>
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_4.jpg" alt="shaw shank">
+                    <div class="tituloPelicula">
+                        <h4>Schindler's List</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- agregue el footer del profesor -->
+
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+
+
+
+    </footer>
+    <!-- agregue el footer del profesor -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
