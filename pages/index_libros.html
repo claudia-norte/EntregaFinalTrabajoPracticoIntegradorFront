@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3477e9e4bb.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Audiolibros</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="../index.html">
+                <i class="fa fa-file-audio-o"></i>
+                <span>Libros</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"> <a class="linkNav" href="./audiolibros.html"> Audio Libros</a> </li>
+                <li class="listaItem"> <a class="linkNav" href="./api.html"> Api Libros</a> </li>
+                <li class="listaItem"> <a class="linkNav" href="./registrarse.html"> Registrarse</a> </li>
+                <li class="listaItem"> <a class="linkNav" href="./contactos.html"> Comentarios</a> </li>
+                <li class="listaItem"> <a class="linkNav iniciarSesion" href="./iniciosesion.html"> Iniciar
+                        Sesion</a> </li>
+            </ul>
+
+        </nav>
+    </header>
+
+<body>
+    <main id="main" class="main">
+        
+        <section class="peliculasAclamadas">
+        <input type="text" id="searchInput" placeholder="Ingrese el término de búsqueda">
+        <button id="searchButton">Buscar Libros</button>
+
+        <div class="peliculaItem">
+            <div id="results" class="peliculaItem"></div>
+        </div>
+       
+    </section>
+    </main>
+    <script src="../js/api_libros.js"></script>
+</body>
+
+</html>

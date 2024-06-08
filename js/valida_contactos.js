@@ -22,40 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const validateForm = () => {
         let isValid = true;
 
-       // Validar campo de nombre                                                                                  
-        isValid = validateField('nombre', 'El nombre es obligatorio') && isValid;                                   
-   
-         // Validar campo de apellido                                                                                  
-         isValid = validateField('apellido', 'El apellido es obligatorio') && isValid;                                   
-   
+         // Validar campo de Nombre
+        isValid = validateField('nombre', 'El Nombre y Apellido es obligatorio') && isValid;
+                                                                                          
         // Validar campo de email
         isValid = validateEmailField('email', 'El correo electrónico no es válido') && isValid;
-
-        // Validar campo de contraseña
-        isValid = validateField('password', 'La contraseña es obligatoria') && isValid;
-                                                                                                          
-       // Validar campo de fecha de nacimiento                                                          
-        isValid = validateField('fechaNacimiento', 'La fecha de nacimiento es obligatoria') && isValid;  
-
-       // Validar campo de país                                              
-        isValid = validateField('pais', 'El país es obligatorio') && isValid; 
-                                                                                                         
-       // Validar checkbox de términos y condiciones                                                         
-        const terminos = document.getElementById('terminos').checked;                                         
-        if (!terminos) {                                                                                      
-            isValid = false;                                                                                  
-            setErrorFor(document.getElementById('terminos'), 'Debes aceptar los términos y condiciones');     
-        } else {                                                                                              
-            setSuccessFor(document.getElementById('terminos'));                                               
-        }                                                                                                     
+        
+        // Validar campo de asunto
+        isValid = validateField('asunto', 'El Asunto no puede quedar vacio') && isValid;
+       
+        // Validar campo de asunto
+        isValid = validateField('textArea', 'El mensaje no puede quedar vacio') && isValid;
+                      
              
         return isValid;
     };
 
-                                                                                                                   
-        
-
-
+      
     // Función para validar un campo específico
     const validateField = (fieldId, errorMessage) => {
         // Obtiene el elemento del campo mediante su ID
